@@ -39,7 +39,7 @@ A project to learn TypeScript.
 
 The following tools were used in this project:
 
-- [Node.js](https://nodejs.org/en/)
+- [Bun](https://bun.sh/)
 - [React](https://pt-br.reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [TailwindCSS](https://tailwindcss.com/)
