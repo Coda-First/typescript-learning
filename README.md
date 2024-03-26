@@ -5,13 +5,13 @@
 <h1 align="center">TypeScript Learning</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/Raxuis/typescript-learning?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/Coda-First/typescript-learning?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/Raxuis/typescript-learning?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/Coda-First/typescript-learning?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Raxuis/typescript-learning?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Coda-First/typescript-learning?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/Raxuis/typescript-learning?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/Coda-First/typescript-learning?color=56BEB8">
 </p>
 
 <h4 align="center">
@@ -46,13 +46,13 @@ The following tools were used in this project:
 
 ## :white_check_mark: Requirements
 
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) and [Bun](https://bun.sh/) installed.
 
 ## :checkered_flag: Starting
 
 ```bash
 # Clone this project
-$ git clone https://github.com/Raxuis/typescript-learning
+$ git clone https://github.com/Coda-First/typescript-learning.git
 
 # Access
 $ cd typescript-learning
