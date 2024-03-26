@@ -5,8 +5,8 @@ import {
 const NavBar = () => {
   return (
     <nav className="flex justify-center w-full gap-3">
-      <Link href="/">Home</Link>
-      <Link href="/about">About</Link>
+      <Link href="/" className="text-4xl font-bold">Home</Link>
+      <Link href="/about" className="text-4xl font-bold">About</Link>
     </nav>
   )
 }
