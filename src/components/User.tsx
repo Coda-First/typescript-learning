@@ -1,3 +1,4 @@
+// Currently not knowing the difference between interface and type
 // interface User {
 //   name: string,
 //   age: number
