@@ -39,14 +39,14 @@ A project to learn TypeScript.
 
 The following tools were used in this project:
 
-- [Bun](https://bun.sh/)
+- [Pnpm](https://pnpm.io/)
 - [React](https://pt-br.reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [TailwindCSS](https://tailwindcss.com/)
 
 ## :white_check_mark: Requirements
 
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Bun](https://bun.sh/) installed.
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Pnpm](https://pnpm.io/installation) installed.
 
 ## :checkered_flag: Starting
 
@@ -58,10 +58,10 @@ $ git clone https://github.com/Coda-First/typescript-learning.git
 $ cd typescript-learning
 
 # Install dependencies
-$ bun install
+$ pnpm install
 
 # Run the project
-$ bun run dev
+$ pnpm run dev
 
 # The server will initialize in the <http://localhost:5173/>
 ```
