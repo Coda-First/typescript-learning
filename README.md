@@ -43,6 +43,7 @@ The following tools were used in this project:
 - [React](https://pt-br.reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [TailwindCSS](https://tailwindcss.com/)
+<table><thead><tr><th>npm command</th><th>pnpm equivalent</th></tr></thead><tbody><tr><td><code>npm install</code></td><td><a href="/cli/install"><code>pnpm install</code></a></td></tr><tr><td><code>npm i &lt;pkg&gt;</code></td><td><a href="/cli/add"><code>pnpm add &lt;pkg&gt;</code></a></td></tr><tr><td><code>npm run &lt;cmd&gt;</code></td><td><a href="/cli/run"><code>pnpm &lt;cmd&gt;</code></a></td></tr></tbody></table>
 
 ## :white_check_mark: Requirements
 
