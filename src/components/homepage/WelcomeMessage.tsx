@@ -1,3 +1,5 @@
+import { Button } from "../ui/Button"
+
 type WelcomeMessageProps = {
   name?: string,
   age: number,
@@ -22,6 +24,7 @@ export const WelcomeMessage = () => {
     <div className="my-4 max-w-sm px-4 space-y-24">
       <Greeting age={9} name="Toto" items={['Bike', 'Pencil']} />
       <Greeting age={19} name="Raphaël" />
+      <Button color="#000">Add a user</Button>
     </div>
   )
 }
