@@ -11,7 +11,7 @@ const Greeting = (props: WelcomeMessageProps) => {
 
 export const WelcomeMessage = () => {
   return (
-    <div className="m-auto my-4 max-w-sm px-4">
+    <div className="my-4 max-w-sm px-4">
       <Greeting age={9} name="Toto" />
     </div>
   )
