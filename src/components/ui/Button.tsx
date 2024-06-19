@@ -1,8 +1,4 @@
-import { ReactNode } from "react";
-
-type PropsWithChildren = {
-  children?: ReactNode,
-}
+import { PropsWithChildren } from "react";
 
 type ButtonProps = PropsWithChildren<{
   color: string
