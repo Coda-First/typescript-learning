@@ -1,17 +1,16 @@
-import { Route, Routes, useNavigate } from 'react-router-dom';
-import { NextUIProvider } from '@nextui-org/react';
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import About from './pages/About';
 
-function App() {
-  const navigate = useNavigate();
+const App = () => {
   return (
-    <NextUIProvider navigate={navigate}>
+    <Router>
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<About />} />
       </Routes>
-    </NextUIProvider>
+    </Router>
   );
-}
+};
+
 export default App;

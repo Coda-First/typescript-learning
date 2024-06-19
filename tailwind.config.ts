@@ -1,17 +1,15 @@
 // tailwind.config.js
-import { nextui } from "@nextui-org/react";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./node_modules/@nextui-org/theme/dist/components/button.js",
-    "./node_modules/@nextui-org/theme/dist/components/avatar.js",
-    "./node_modules/@nextui-org/theme/dist/components/link.js",
-    './node_modules/@nextui-org/theme/dist/components/(button|snippet|code|input).js'
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [],
 };
