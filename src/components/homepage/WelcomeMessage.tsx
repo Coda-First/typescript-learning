@@ -24,7 +24,9 @@ export const WelcomeMessage = () => {
     <div className="my-4 max-w-sm px-4 space-y-24">
       <Greeting age={9} name="Toto" items={['Bike', 'Pencil']} />
       <Greeting age={19} name="Raphaël" />
-      <Button onClick={() => {
+      <Button onMouseEnter={e => {
+        alert('You can\'t click here haha')
+      }} onClick={() => {
         alert('Added user');
       }} color="#000FFF">Add a user</Button>
     </div>
