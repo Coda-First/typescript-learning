@@ -27,7 +27,7 @@ const Greeting = (props: WelcomeMessageProps) => {
           </>}
         </div>
       }
-      <Button onClick={() => handleToggle()} color="#000FFF">Show infos</Button>
+      <Button onClick={() => handleToggle()} color="#000FFF">Show user infos</Button>
     </>
   )
 }
