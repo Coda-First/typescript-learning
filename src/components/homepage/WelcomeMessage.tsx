@@ -25,7 +25,7 @@ const Greeting = (props: UserProps) => {
           </>}
           <p>Bio : {userBio ? userBio : 'No bio yet'}</p>
           <label className="block text-gray-700 text-sm font-bold mb-2">Change your bio :</label>
-          <input className="w-full bg-gray-100 p-2 rounded-md border-2 border-gray-200" type="text" value={userBio} onChange={(e) => setUserBio(e.target.value)} />
+          <input className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50" type="text" value={userBio} onChange={(e) => setUserBio(e.target.value)} />
         </div>
       }
       <Button onClick={() => handleToggle()} color="#000FFF">{toggleInfos ? 'Hide user infos' : 'Show user infos'}</Button>
