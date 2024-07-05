@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Button } from "../ui/Button"
 
 type WelcomeMessageProps = {
@@ -7,26 +8,36 @@ type WelcomeMessageProps = {
 }
 
 const Greeting = (props: WelcomeMessageProps) => {
+  const [toggleInfos, setToggleInfos] = useState<boolean>(false);
+
+  const handleToggle = () => {
+    setToggleInfos(() => !toggleInfos);
+  }
   return (
-    <div className="space-y-2">
-      <p>Welcome {props.name ?? 'Anonymous'}!</p>
-      <p>You are {props.age} years old.</p>
-      {props.items && <><p>Here are your items :</p>
-        <ul className="list-disc list-inside">
-          {props.items.map((item, index) => <li key={index}>{item}</li>)}
-        </ul></>}
-    </div>
+    <>
+      {toggleInfos &&
+        <div className="space-y-2">
+          <p>Welcome {props.name ?? 'Anonymous'}!</p>
+          <p>You are {props.age} years old.</p>
+          {props.items && <>
+            <p>Here are your items :</p>
+            <ul className="list-disc list-inside">
+              {props.items.map((item, index) => <li key={index}>{item}</li>)}
+            </ul>
+          </>}
+        </div>
+      }
+      <Button onClick={() => handleToggle()} color="#000FFF">Show infos</Button>
+    </>
   )
 }
 
 export const WelcomeMessage = () => {
   return (
-    <div className="my-4 max-w-sm px-4 space-y-24">
+    <div className="flex flex-col my-4 max-w-sm px-4 space-y-24">
       <Greeting age={9} name="Toto" items={['Bike', 'Pencil']} />
       <Greeting age={19} name="Raphaël" />
-      <Button onMouseEnter={e => {
-        alert('You can\'t click here haha')
-      }} onClick={() => {
+      <Button onClick={() => {
         alert('Added user');
       }} color="#000FFF">Add a user</Button>
     </div>
