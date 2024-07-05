@@ -1,21 +1,7 @@
 import { useState } from "react";
 import { Button } from "../ui/Button"
 
-type UserProps = {
-  name?: string,
-  age: number,
-  items?: string[],
-  country: Countries
-}
-
-enum Countries {
-  France = 'France',
-  Belgium = 'Belgium',
-  Germany = 'Germany',
-  Italy = 'Italy',
-  Spain = 'Spain',
-  USA = 'USA'
-}
+import { Countries, UserProps } from "../../utils/userInfos.type";
 
 const Greeting = (props: UserProps) => {
   const [toggleInfos, setToggleInfos] = useState<boolean>(false);
