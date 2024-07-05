@@ -1,13 +1,23 @@
 import { useState } from "react";
 import { Button } from "../ui/Button"
 
-type WelcomeMessageProps = {
+type UserProps = {
   name?: string,
   age: number,
-  items?: string[]
+  items?: string[],
+  country: Countries
 }
 
-const Greeting = (props: WelcomeMessageProps) => {
+enum Countries {
+  France = 'France',
+  Belgium = 'Belgium',
+  Germany = 'Germany',
+  Italy = 'Italy',
+  Spain = 'Spain',
+  USA = 'USA'
+}
+
+const Greeting = (props: UserProps) => {
   const [toggleInfos, setToggleInfos] = useState<boolean>(false);
   const [userBio, setUserBio] = useState<string>('');
 
@@ -20,6 +30,7 @@ const Greeting = (props: WelcomeMessageProps) => {
         <div className="space-y-2">
           <p>Welcome {props.name ?? 'Anonymous'}!</p>
           <p>You are {props.age} years old.</p>
+          <p>You live in {props.country}.</p>
           {props.items && <>
             <p>Here are your items :</p>
             <ul className="list-disc list-inside">
@@ -39,8 +50,8 @@ const Greeting = (props: WelcomeMessageProps) => {
 export const WelcomeMessage = () => {
   return (
     <div className="flex flex-col my-4 max-w-sm px-4 space-y-24">
-      <Greeting age={9} name="Toto" items={['Bike', 'Pencil']} />
-      <Greeting age={19} name="Raphaël" />
+      <Greeting age={9} name="Toto" items={['Bike', 'Pencil']} country={Countries.France} />
+      <Greeting age={19} name="Raphaël" country={Countries.Belgium} />
       <Button onClick={() => {
         alert('Added user');
       }} color="#000FFF">Add a user</Button>
