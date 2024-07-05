@@ -35,7 +35,7 @@ const Greeting = (props: UserProps) => {
 
 export const WelcomeMessage = () => {
   return (
-    <div className="flex flex-col my-4 max-w-sm px-4 space-y-24">
+    <div className="flex flex-col my-4 max-w-sm px-4 space-y-12">
       <Greeting age={9} name="Toto" items={['Bike', 'Pencil']} country={Countries.France} />
       <Greeting age={19} name="Raphaël" country={Countries.Belgium} />
       <Button onClick={() => {
